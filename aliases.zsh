@@ -1,11 +1,9 @@
 alias a='sudo apt-get'
 alias ac='sudo apt-cache'
-alias acpitool='sudo acpitool'
 alias amzn-db='ssh imagenation@database'
 alias amzn-dev='ssh imagenation@development'
 alias amzn-release='ssh imagenation@release'
 alias amzn-staging='ssh imagenation@staging'
-alias ctorrent='ctorrent -p 33222'
 alias g="git"
 alias godaddy='ssh imagenation@godaddy'
 alias grep='grep --colour=auto'
