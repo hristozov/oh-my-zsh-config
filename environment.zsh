@@ -2,5 +2,5 @@ export PAGER="/usr/bin/most"
 export HISTFILE=~/.histfile
 export HISTSIZE=100000
 export SAVEHIST=100000
-export PATH="/home/gh/bin:/home/gh/idea/bin:${PATH}"
+export PATH="/home/gh/bin:/home/gh/idea/bin:/home/gh/dragondisk:${PATH}"
 
