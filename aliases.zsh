@@ -1,4 +1,5 @@
 alias a='sudo apt-get'
+alias abuild='sudo apt-build'
 alias ac='sudo apt-cache'
 alias amzn-db='ssh imagenation@database'
 alias amzn-dev='ssh imagenation@development'
