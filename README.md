@@ -9,5 +9,5 @@ Features:
 ## Usage
 ```bash
 ZSH_THEME="forkbomb"
-plugins=(git grunt npm node ruby rvm svn)
+plugins=(git grunt mvn npm node ruby rvm svn)
 ```
