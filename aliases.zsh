@@ -35,3 +35,4 @@ alias ta='tmux -2 attach'
 alias u='grunt'
 alias v='vim'
 alias wgc='wget -c'
+
