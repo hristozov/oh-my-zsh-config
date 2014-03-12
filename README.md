@@ -5,6 +5,7 @@ Features:
 * SVN status (branch, rev, whether it's dirty) in the prompt
 * grunt submodule included
 * modified Gentoo theme (similar to the original Bash prompt)
+* [git lg](https://coderwall.com/p/euwpig) support
 
 ## Usage
 ```bash
