@@ -33,6 +33,7 @@ alias sv='sudo vim'
 alias t='tmux -2'
 alias ta='tmux -2 attach'
 alias u='grunt'
+alias upgr='a update ; a upgrade'
 alias v='vim'
 alias wgc='wget -c'
 
