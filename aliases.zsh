@@ -1,3 +1,5 @@
+# Contains useful aliases, which I use regularly in work.
+
 alias a='sudo apt-get'
 alias abuild='sudo apt-build'
 alias ac='sudo apt-cache'

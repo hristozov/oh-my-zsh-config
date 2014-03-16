@@ -1,3 +1,5 @@
+# Various useful key mapping for my zsh.
+
 typeset -A key
 
 key[Home]=${terminfo[khome]}
