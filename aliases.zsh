@@ -39,3 +39,5 @@ alias upgr='a update ; a upgrade'
 alias v='vim'
 alias wgc='wget -c'
 
+curl-post-json() { curl -vv -X POST -H "Content-Type:application/json" --data $2 $1; }
+
