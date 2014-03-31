@@ -39,5 +39,6 @@ alias upgr='a update ; a upgrade'
 alias v='vim'
 alias wgc='wget -c'
 
+beautify-json() { for file in *.json; do js-beautify $file > ${file/.json/-beat.json}; done }
 curl-post-json() { curl -vv -X POST -H "Content-Type:application/json" --data $2 $1; }
 
