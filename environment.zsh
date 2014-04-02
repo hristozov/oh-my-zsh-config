@@ -1,6 +1,6 @@
 # Various environment variables.
 
-export PAGER="/usr/bin/most"
+export PAGER=`which most`
 export HISTFILE=~/.histfile
 export HISTSIZE=100000
 export SAVEHIST=100000
