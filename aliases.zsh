@@ -40,6 +40,7 @@ alias wgc='wget -c'
 
 beautify-json() { for file in *.json; do js-beautify $file > ${file/.json/-beat.json}; done }
 curl-post-json() { curl -vv -X POST -H "Content-Type:application/json" --data $2 $1; }
+curl-post-file() { curl -vv -X POST --data "@$2" $1; }
 ns() { nohup setsid $1 > /dev/null }
 # https://gist.github.com/lelandbatey/8677901
 whiteboard-digitize() { convert $1 -morphology Convolve DoG:15,100,0 -negate -normalize -blur 0x1 -channel RBG -level 60%,91%,0.1 $2 }
