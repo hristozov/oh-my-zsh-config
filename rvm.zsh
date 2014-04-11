@@ -1,5 +1,5 @@
 # Basic RVM initialization boilerplate.
-[[ -s "/home/gh/.rvm/scripts/rvm" ]] && source "/home/gh/.rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 path+="$HOME/.rvm/bin"
 export PATH
 
