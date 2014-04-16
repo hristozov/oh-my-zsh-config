@@ -22,10 +22,10 @@ prompt_string() {
 	echo "$username_and_host$scm_prompt $directory$prompt_character "
 }
 
-
 PROMPT='$(prompt_string)'
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" ("
 ZSH_THEME_GIT_PROMPT_SUFFIX=")"
 ZSH_THEME_SVN_PROMPT_DIRTY="%{$fg_bold[red]%}(⚡)%{$fg_bold[yellow]%}"
 ZSH_THEME_SVN_PROMPT_CLEAN="%{$fg_bold[green]%}(○)%{$fg_bold[yellow]%}"
+
