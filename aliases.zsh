@@ -3,6 +3,7 @@
 alias a='sudo apt-get'
 alias abuild='sudo apt-build'
 alias ac='sudo apt-cache'
+alias acpitool='sudo acpitool'
 alias amzn-db='ssh database'
 alias amzn-dev='ssh development'
 alias amzn-release='ssh release'
