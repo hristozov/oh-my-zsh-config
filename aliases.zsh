@@ -45,5 +45,6 @@ curl-post-file() { curl -vv -X POST --data "@$2" $1; }
 fix-cp1251-subs() { for file in *.srt; do iconv -f cp1251 -t utf8 $file > $file.utf8 ; mv $file.utf8 $file ; done }
 ns() { nohup setsid $1 > /dev/null }
 # https://gist.github.com/lelandbatey/8677901
+watch-refurb-store() { while true; do curl -s $1 | grep customer_commit_display | tr -d '[[:space:]]' | sed 's/<spanclass=\"customer_commit_display\">//g' | sed 's/<\/span>//g'; echo; sleep 120; done; }
 whiteboard-digitize() { convert $1 -morphology Convolve DoG:15,100,0 -negate -normalize -blur 0x1 -channel RBG -level 60%,91%,0.1 $2 }
 
