@@ -3,6 +3,7 @@
 alias a='sudo apt-get'
 alias abuild='sudo apt-build'
 alias ac='sudo apt-cache'
+alias acpitool='sudo acpitool'
 alias amzn-db='ssh database'
 alias amzn-dev='ssh development'
 alias amzn-release='ssh release'
@@ -59,6 +60,14 @@ ns() {
 	nohup setsid $1 > /dev/null
 }
 # https://gist.github.com/lelandbatey/8677901
+watch-refurb-store() {
+	while true; do
+		curl -s $1 | grep customer_commit_display | tr -d '[[:space:]]' | sed 's/<spanclass=\"customer_commit_display\">//g' | sed 's/<\/span>//g'
+		echo -n " "
+		date
+		sleep 120
+	done
+}
 whiteboard-digitize() {
 	convert $1 -morphology Convolve DoG:15,100,0 -negate -normalize -blur 0x1 -channel RBG -level 60%,91%,0.1 $2
 }
