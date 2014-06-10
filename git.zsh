@@ -2,7 +2,7 @@
 # environment.
 git config --global user.name "Georgi Hristozov"
 git config --global user.email "georgi@forkbomb.nl"
-git config --global commit.gpgsign
+git config --global commit.gpgsign true
 
 # See https://coderwall.com/p/euwpig
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit"
