@@ -31,8 +31,8 @@ unset k
 # Mac-specific
 bindkey "^[^[[C"  forward-word
 bindkey "^[^[[D"  backward-word
-bindkey "^[[C"    beggining-of-line
-bindkey "^[[D"    end-of-line
+bindkey "^[[D"    beggining-of-line
+bindkey "^[[C"    end-of-line
 
 # Unknown?!
 bindkey '\eOH' beginning-of-line
