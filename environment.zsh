@@ -8,4 +8,4 @@ path+="$HOME/bin"
 path+="$HOME/idea/bin"
 path+="$HOME/dragondisk"
 export PATH
-
+export EDITOR=`which vim`
