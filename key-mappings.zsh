@@ -28,6 +28,13 @@ unset k
 [[ -n "${key[Left]}"    ]]  && bindkey  "${key[Left]}"    backward-char
 [[ -n "${key[Right]}"   ]]  && bindkey  "${key[Right]}"   forward-char
 
+# Mac-specific
+bindkey "^[^[[C"  forward-word
+bindkey "^[^[[D"  backward-word
+bindkey "^[[C"    beggining-of-line
+bindkey "^[[D"    end-of-line
+
+# Unknown?!
 bindkey '\eOH' beginning-of-line
 bindkey '\eOF' end-of-line
 
