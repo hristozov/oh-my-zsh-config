@@ -9,11 +9,11 @@ export SAVEHIST=100000
 path+="$HOME/bin"
 if [ -e "$HOME/idea" ]
 then
-	path+="$HOME/idea/bin"
+  path+="$HOME/idea/bin"
 fi
 path+="/usr/local/sbin"
 if [ -e "/Applications/Racket v6.0.1/" ]
 then
-	path+="/Applications/Racket v6.0.1/bin"
+  path+="/Applications/Racket v6.0.1/bin"
 fi
 export PATH
