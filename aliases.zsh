@@ -32,6 +32,7 @@ alias t='tmux -2'
 alias ta='tmux -2 attach'
 alias u='grunt'
 alias v='vim'
+alias va='vagrant'
 alias wgc='wget -c'
 
 beautify-json() {
