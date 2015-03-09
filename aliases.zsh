@@ -41,6 +41,9 @@ alias v='vim'
 alias va='vagrant'
 alias wgc='wget -c'
 
+alias gdm='git diff --stat master'
+compdef _git gdm=git-diff
+
 beautify-json() {
   for file in *.json; do
     js-beautify $file > ${file/.json/-beat.json}
