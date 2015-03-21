@@ -5,6 +5,7 @@ export PAGER=`which most`
 export HISTFILE=~/.histfile
 export HISTSIZE=100000
 export SAVEHIST=100000
+export CONDOR_CONFIG=/Users/gh/condor/etc/condor_config
 
 if [ -e "$HOME/bin" ]
 then
@@ -31,6 +32,12 @@ fi
 if [ -e "$HOME/.nimble/bin" ]
 then
   path+="$HOME/.nimble/bin"
+fi
+
+if [ -e "$HOME/condor" ]
+then
+  path+="/Users/gh/condor/bin"
+  path+="/Users/gh/condor/sbin"
 fi
 
 export PATH
