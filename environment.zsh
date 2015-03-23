@@ -36,8 +36,8 @@ fi
 
 if [ -e "$HOME/condor" ]
 then
-  path+="/Users/gh/condor/bin"
-  path+="/Users/gh/condor/sbin"
+  path+="$HOME/condor/bin"
+  path+="$HOME/condor/sbin"
 fi
 
 export PATH
