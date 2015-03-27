@@ -1,16 +1,11 @@
 # Contains useful aliases, which I use regularly in work.
 
-alias amzn-db='ssh database'
-alias amzn-dev='ssh development'
-alias amzn-release='ssh release'
-alias amzn-staging='ssh staging'
 alias b='brew'
 alias bo='bower'
 alias compress-bz2='tar --use-compress-program=pbzip2 -cvf'
 alias compress-xz='tar --use-compress-program=pigz -cvf'
 alias e='grep'
 alias g='git'
-alias godaddy='ssh godaddy'
 alias grep='grep --colour=auto'
 alias h='ls -hl'
 alias halt='sudo halt'
