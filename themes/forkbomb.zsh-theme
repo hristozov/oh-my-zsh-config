@@ -13,13 +13,13 @@ svn_prompt() {
 }
 
 prompt_string() {
-  local username_and_host="%(!.%{$fg_bold[red]%}.%{$fg_bold[green]%}%n@)%m"
+  local hostname="%{$fg_bold[green]%}%m"
   local directory="%{$fg_bold[blue]%}%(!.%1~.%~)"
   local git_prompt="$(git_prompt_info)"
   local svn_prompt="$(svn_prompt)"
   local scm_prompt="%{$fg_bold[yellow]%}$svn_prompt$git_prompt"
   local prompt_character="%{$fg_bold[blue]%} %_$(prompt_char)%{$reset_color%}"
-  echo "$username_and_host$scm_prompt $directory$prompt_character "
+  echo "$hostname $directory$scm_prompt$prompt_character "
 }
 
 PROMPT='$(prompt_string)'
