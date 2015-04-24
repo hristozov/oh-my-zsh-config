@@ -1,7 +1,7 @@
 setopt prompt_subst
 
 function prompt_char {
-  if [ $UID -eq 0 ]; then echo "#"; else echo $; fi
+  if [ $UID -eq 0 ]; then echo "Ψ"; else echo "λ"; fi
 }
 
 svn_prompt() {
