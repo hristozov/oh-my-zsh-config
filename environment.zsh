@@ -24,6 +24,11 @@ then
   path+="/Applications/Racket v6.0.1/bin"
 fi
 
+if [ -e "$HOME/flex/4.13/bin/" ]
+then
+  path+="$HOME/flex/4.13/bin/"
+fi
+
 if [ -e "$HOME/.cabal/bin" ]
 then
   path+="$HOME/.cabal/bin"
