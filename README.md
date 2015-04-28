@@ -6,7 +6,7 @@ Not very elegant, but useful. On my box.
 * grunt submodule included
 * custom theme (based on the Gentoo them, which is itself similar to the original Bash prompt)
 * [git lg](https://coderwall.com/p/euwpig) support
-* various other minor tweaks
+* various other minor tweaks, bells and whistles
 
 ## Usage
 ```bash
