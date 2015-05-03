@@ -1,5 +1,5 @@
 # oh-my-zsh config
-Not very elegant, but useful. On my box.
+Not very elegant, but useful. On my box... :)
 
 ## Features
 * SVN status (branch, rev, whether it's dirty) in the prompt
