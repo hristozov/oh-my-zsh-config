@@ -60,6 +60,10 @@ fix-cp1251-subs() {
   done
 }
 
+gb-merged() {
+  git branch -M $1 "_merged-$1"
+}
+
 ns() {
   nohup setsid $1 > /dev/null
 }
