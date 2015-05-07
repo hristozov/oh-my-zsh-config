@@ -7,7 +7,9 @@ alias compress-xz='tar --use-compress-program=pigz -cvf'
 alias e='grep'
 alias g='git'
 alias gmm='git merge master'
+compdef _git gmm=git-merge
 alias gms='git merge --squash'
+compdef _git gms=git-merge
 alias grep='grep --colour=auto'
 alias h='ls -hl'
 alias halt='sudo halt'
@@ -65,6 +67,7 @@ fix-cp1251-subs() {
 gb-merged() {
   git branch -M $1 "_merged-$1"
 }
+compdef _git gb-merged=git-merge
 
 ns() {
   nohup setsid $1 > /dev/null
