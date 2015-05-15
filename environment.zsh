@@ -19,14 +19,14 @@ fi
 
 path+="/usr/local/sbin"
 
-if [ -e "/Applications/Racket v6.0.1/" ]
+if [ -e "/Applications/Racket v6.0.1" ]
 then
   path+="/Applications/Racket v6.0.1/bin"
 fi
 
-if [ -e "$HOME/flex/4.13/bin/" ]
+if [ -e "$HOME/flex/4.13/bin" ]
 then
-  path+="$HOME/flex/4.13/bin/"
+  path+="$HOME/flex/4.13/bin"
 fi
 
 if [ -e "$HOME/.cabal/bin" ]
