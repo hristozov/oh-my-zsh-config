@@ -6,6 +6,8 @@ alias compress-bz2='tar --use-compress-program=pbzip2 -cvf'
 alias compress-xz='tar --use-compress-program=pigz -cvf'
 alias e='grep'
 alias g='git'
+alias gdm='git diff --stat master'
+compdef _git gdm=git-diff©
 alias gmm='git merge master'
 compdef _git gmm=git-merge
 alias gms='git merge --squash'
@@ -39,9 +41,6 @@ alias u='grunt'
 alias v='vim'
 alias va='vagrant'
 alias wgc='wget -c'
-
-alias gdm='git diff --stat master'
-compdef _git gdm=git-diff
 
 beautify-json() {
   for file in *.json; do
