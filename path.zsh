@@ -1,3 +1,5 @@
+# Set the appropriate PATH entries.
+
 if [ -e "$HOME/bin" ]
 then
   path+="$HOME/bin"
