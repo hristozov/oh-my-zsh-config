@@ -9,6 +9,7 @@ Not very elegant, but useful. On my box... :)
 * various other minor tweaks, bells and whistles
 
 ## Usage
+(the way I actually use it on my system)
 ```bash
 ZSH_THEME="forkbomb"
 plugins=(brew git grunt mvn npm node osx rails ruby rvm sublime svn vagrant)
