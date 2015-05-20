@@ -5,13 +5,8 @@ alias bo='bower'
 alias compress-bz2='tar --use-compress-program=pbzip2 -cvf'
 alias compress-xz='tar --use-compress-program=pigz -cvf'
 alias e='grep'
-alias g='git'
-alias gdm='git diff --stat master'
-compdef _git gdm=git-diff©
-alias gmm='git merge master'
-compdef _git gmm=git-merge
-alias gms='git merge --squash'
-compdef _git gms=git-merge
+
+
 alias grep='grep --colour=auto'
 alias h='ls -hl'
 alias halt='sudo halt'
@@ -62,11 +57,6 @@ fix-cp1251-subs() {
     mv $file.utf8 $file
   done
 }
-
-gb-merged() {
-  git branch -M $1 "_merged-$1"
-}
-compdef _git gb-merged=git-merge
 
 ns() {
   nohup setsid $1 > /dev/null
