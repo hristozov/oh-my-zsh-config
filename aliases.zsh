@@ -5,8 +5,6 @@ alias bo='bower'
 alias compress-bz2='tar --use-compress-program=pbzip2 -cvf'
 alias compress-xz='tar --use-compress-program=pigz -cvf'
 alias e='grep'
-
-
 alias grep='grep --colour=auto'
 alias h='ls -hl'
 alias halt='sudo halt'
