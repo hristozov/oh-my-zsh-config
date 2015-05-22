@@ -64,7 +64,6 @@ print-current-trello-tasks() {
   jq '.cards[] | select(.closed == false) | .name' $1
 }
 
-
 watch-apple-store() {
   while true; do
     curl -s $1 | grep customer_commit_display | tr -d '[[:space:]]' | sed 's/<spanclass=\"customer_commit_display\">//g' | sed 's/<\/span>//g'
