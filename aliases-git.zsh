@@ -1,6 +1,7 @@
 # My git aliases.
 
 alias g='git'
+alias gcob='git checkout -b'
 alias gdm='git diff --stat master'
 compdef _git gdm=git-diff©
 alias gmm='git merge master'
