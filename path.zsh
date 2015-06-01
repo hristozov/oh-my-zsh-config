@@ -10,7 +10,11 @@ then
   path+="$HOME/idea/bin"
 fi
 
-path+="/usr/local/sbin"
+# Contains some binaries installed with homebrew.
+if [ -e "/usr/local/sbin" ]
+then
+  path+="/usr/local/sbin"
+fi
 
 if [ -e "/Applications/Racket v6.0.1" ]
 then
