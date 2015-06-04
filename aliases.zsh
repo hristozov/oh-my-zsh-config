@@ -1,5 +1,6 @@
 # Contains useful aliases, which I use regularly in work.
 
+alias ad='npm run apidoc'
 alias b='brew'
 alias bo='bower'
 alias compress-bz2='tar --use-compress-program=pbzip2 -cvf'
