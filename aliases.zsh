@@ -40,12 +40,12 @@ beautify-json() {
   done
 }
 
-curl-post-json() {
-  curl -vv -X POST -H "Content-Type:application/json" --data $2 $1
-}
-
 curl-post-file() {
   curl -vv -X POST --data "@$2" $1
+}
+
+curl-post-json() {
+  curl -vv -X POST -H "Content-Type:application/json" --data $2 $1
 }
 
 fix-cp1251-subs() {
@@ -53,6 +53,10 @@ fix-cp1251-subs() {
     iconv -f cp1251 -t utf8 $file > $file.utf8
     mv $file.utf8 $file
   done
+}
+
+get-groovy-sessions-show() {
+  wgc http://www.groovysessions.com/radioshows/groovy-sessions-$1-part-01.mp3 && wgc http://www.groovysessions.com/radioshows/groovy-sessions-$1-part-02.mp3
 }
 
 ns() {
@@ -75,8 +79,4 @@ watch-apple-store() {
 # https://gist.github.com/lelandbatey/8677901
 whiteboard-digitize() {
   convert $1 -morphology Convolve DoG:15,100,0 -negate -normalize -blur 0x1 -channel RBG -level 60%,91%,0.1 $2
-}
-
-get-groovy-sessions-show() {
-  wgc http://www.groovysessions.com/radioshows/groovy-sessions-$1-part-01.mp3 && wgc http://www.groovysessions.com/radioshows/groovy-sessions-$1-part-02.mp3
 }
