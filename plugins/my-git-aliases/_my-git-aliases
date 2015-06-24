@@ -1,0 +1,5 @@
+compdef _my-git-aliases gcom=git-checkout
+compdef _my-git-aliases gdm=git-diff
+compdef _my-git-aliases gmm=git-merge
+compdef _my-git-aliases gms=git-merge
+compdef _my-git-aliases gb-merged=git-merge

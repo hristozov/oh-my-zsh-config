@@ -12,5 +12,5 @@ Not very elegant, but useful. On my box... :)
 (_the way I actually use it on my system, probably won't be very useful on yours_)
 ```bash
 ZSH_THEME="forkbomb"
-plugins=(atom aws brew git git-extras grunt lein mvn npm node osx rails ruby rvm sublime svn vagrant)
+plugins=(my-git-aliases atom aws brew git git-extras grunt lein mvn npm node osx rails ruby rvm sublime svn vagrant)
 ```
