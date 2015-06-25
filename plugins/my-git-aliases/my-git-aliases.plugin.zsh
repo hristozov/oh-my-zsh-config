@@ -11,3 +11,10 @@ alias grs='git reset --soft HEAD~1'
 gb-merged() {
   git branch -M $1 "_merged-$1"
 }
+
+# TODO: Move it to a completions file.
+compdef _git gcom=git-checkout
+compdef _git gdm=git-diff
+compdef _git gmm=git-merge
+compdef _git gms=git-merge
+compdef _git gb-merged=git-merge
