@@ -7,6 +7,7 @@ alias gdm='git diff --stat master'
 alias gmm='git merge master'
 alias gms='git merge --squash'
 alias grs='git reset --soft HEAD~1'
+alias gb-remove-merged='git branch --list | egrep "\s{2}merged" | xargs git branch -D'
 
 gb-merged() {
   git branch -M $1 "merged/$1"
