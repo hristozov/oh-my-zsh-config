@@ -9,7 +9,7 @@ alias gms='git merge --squash'
 alias grs='git reset --soft HEAD~1'
 
 gb-merged() {
-  git branch -M $1 "_merged-$1"
+  git branch -M $1 "merged/$1"
 }
 
 # TODO: Move it to a completions file.
