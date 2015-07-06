@@ -59,6 +59,10 @@ get-groovy-sessions-show() {
   wgc http://www.groovysessions.com/radioshows/groovy-sessions-$1-part-01.mp3 && wgc http://www.groovysessions.com/radioshows/groovy-sessions-$1-part-02.mp3
 }
 
+get-random-word() {
+  perl -e 'srand; rand($.) < 1 && ($line = $_) while <>; print $line;' /usr/share/dict/words
+}
+
 ns() {
   nohup setsid $1 > /dev/null
 }
