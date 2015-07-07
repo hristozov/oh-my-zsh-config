@@ -1,1 +1,3 @@
 Contains external plugin submodules which I find useful, but are not part of "oh-my-zsh".
+
+Also, includes a dummy plugin for adding custom autocompletions (since oh-my-zsh wouldn't allow me to do this outside a plugin).
