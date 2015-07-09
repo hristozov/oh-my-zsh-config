@@ -1,4 +1,4 @@
-# Contains useful aliases, which I use regularly in work.
+# Contains useful aliases, which I use regularly in my workflows.
 
 alias ad='npm run apidoc'
 alias b='brew'
