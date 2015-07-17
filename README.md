@@ -14,4 +14,4 @@ Not very elegant, but useful. On my box... :)
 ZSH_THEME="forkbomb"
 plugins=(my-git-aliases atom aws brew git git-extras grunt lein mvn npm node osx rails ruby rvm sublime svn vagrant)
 ```
-Note that a custom git aliases plugin is in the list.
+Note the custom `my-git-aliases` plugin in the list.
