@@ -73,6 +73,10 @@ print-current-trello-tasks() {
   jq '.cards[] | select(.closed == false) | .name' $1
 }
 
+remove-domain-from-known-hosts() {
+  sed -i "" "/$1/d" ~/.ssh/known_hosts
+}
+
 # https://gist.github.com/lelandbatey/8677901
 whiteboard-digitize() {
   convert $1 -morphology Convolve DoG:15,100,0 -negate -normalize -blur 0x1 -channel RBG -level 60%,91%,0.1 $2
