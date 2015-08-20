@@ -8,6 +8,7 @@ alias gbd='git branch -D'
 alias gmm='git merge master'
 alias gms='git merge --squash'
 alias grs='git reset --soft HEAD~1'
+alias grbm='git rebase master'
 alias gb-remove-merged='git branch --list | egrep "\s{2}merged" | xargs git branch -D'
 
 gb-merged() {
