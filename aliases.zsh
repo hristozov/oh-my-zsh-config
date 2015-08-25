@@ -36,12 +36,6 @@ alias v='vim'
 alias va='vagrant'
 alias wgc='wget -c'
 
-beautify-json() {
-  for file in *.json; do
-    js-beautify $file > ${file/.json/-beat.json}
-  done
-}
-
 curl-post-file() {
   curl -vv -X POST --data "@$2" $1
 }
@@ -67,10 +61,6 @@ get-random-word() {
 
 ns() {
   nohup setsid $1 > /dev/null
-}
-
-print-current-trello-tasks() {
-  jq '.cards[] | select(.closed == false) | .name' $1
 }
 
 remove-domain-from-known-hosts() {
