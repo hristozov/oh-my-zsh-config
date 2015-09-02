@@ -3,6 +3,7 @@
 alias g='git'
 alias gcob='git checkout -b'
 alias gcom='git checkout origin/master'
+alias gdh='git diff head'
 alias gdm='git diff --stat master'
 alias gbd='git branch -D'
 alias gmm='git merge master'
