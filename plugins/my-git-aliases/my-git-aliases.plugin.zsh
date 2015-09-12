@@ -1,6 +1,7 @@
 # My git aliases.
 
 alias g='git'
+alias gap='git add -p'
 alias gcob='git checkout -b'
 alias gcom='git checkout origin/master'
 alias gdh='git diff head'
