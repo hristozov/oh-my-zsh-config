@@ -42,6 +42,7 @@ alias u='grunt'
 alias v='vim'
 alias va='vagrant'
 alias wgc='wget -c'
+alias wtf='which'
 
 curl-post-file() {
   curl -vv -X POST --data "@$2" $1
