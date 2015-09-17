@@ -11,3 +11,4 @@ fi
 export HISTFILE=~/.histfile
 export HISTSIZE=100000
 export SAVEHIST=100000
+export ANSIBLE_INVENTORY=~/.ansible_hosts
