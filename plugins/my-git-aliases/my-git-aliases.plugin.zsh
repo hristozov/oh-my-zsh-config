@@ -2,22 +2,23 @@
 
 alias g='git'
 alias gap='git add -p'
+alias gb-remove-merged='git branch --list | egrep "\s{2}merged" | xargs git branch -D'
+alias gbd='git branch -D'
 alias gcob='git checkout -b'
 alias gcom='git checkout origin/master'
 alias gdh='git diff head'
 alias gdm='git diff --stat master'
 alias gdmh='git diff --stat master HEAD'
-alias gbd='git branch -D'
+alias git-prune-reflog='git reflog expire --expire=1.minute refs/heads/master && git fsck --unreachable && git prune && git gc'
 alias gmm='git merge master'
 alias gms='git merge --squash'
 alias gpo='git push origin'
 alias gpt='git push --tags'
-alias grs='git reset --soft HEAD~1'
 alias grbm='git rebase master'
 alias grbb='git rebase -i master'
+alias grs='git reset --soft HEAD~1'
 alias gsui='git submodule update --init'
 alias gt='git tag'
-alias gb-remove-merged='git branch --list | egrep "\s{2}merged" | xargs git branch -D'
 
 gb-merged() {
   git branch -M $1 "merged/$1"
