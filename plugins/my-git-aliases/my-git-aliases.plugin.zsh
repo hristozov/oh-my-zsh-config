@@ -15,6 +15,7 @@ alias gpt='git push --tags'
 alias grs='git reset --soft HEAD~1'
 alias grbm='git rebase master'
 alias grbb='git rebase -i master'
+alias gsui='git submodule update --init'
 alias gt='git tag'
 alias gb-remove-merged='git branch --list | egrep "\s{2}merged" | xargs git branch -D'
 
