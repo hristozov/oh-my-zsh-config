@@ -3,6 +3,7 @@
 alias ad='npm run apidoc'
 alias an='ansible'
 alias b='brew'
+alias ba='brew cask'
 alias bo='bower'
 alias clear-ansible-cache='rm ~/.ansible/tmp/ansible-ec2.*'
 alias compress-bz2='tar --use-compress-program=pbzip2 -cvf'
