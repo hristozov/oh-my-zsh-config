@@ -1,5 +1,7 @@
 # Contains useful aliases, which I use regularly in my workflows.
 
+alias a='atom'
+alias att='atom .'
 alias ad='npm run apidoc'
 alias an='ansible'
 alias b='brew'
