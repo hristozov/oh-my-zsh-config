@@ -18,6 +18,7 @@ alias doc-remove-dangling-images='docker rmi $(docker images -q -f dangling=true
 alias doc-remove-all-images='docker rmi $(docker images -q)'
 alias doc-remove-all-containers='docker rm $(docker ps --no-trunc -aq)'
 alias docm='docker-machine'
+alias ducksh='du -cksh'
 alias e='grep'
 alias grep='grep --colour=auto'
 alias h='ls -hl'
