@@ -9,6 +9,6 @@ else
 fi
 
 export HISTFILE=~/.histfile
-export HISTSIZE=100000
-export SAVEHIST=100000
+export HISTSIZE=200000
+export SAVEHIST=200000
 export ANSIBLE_INVENTORY=~/.ansible_hosts
