@@ -1,5 +1,7 @@
 # Contains useful aliases, which I use regularly in my workflows.
 
+NTP_SERVER="pool.ntp.org"
+
 alias a='atom'
 alias att='atom .'
 alias ad='npm run apidoc'
@@ -36,8 +38,8 @@ alias le='lein'
 alias lh='ls -alh'
 alias m='mvim'
 alias n='npm'
-alias ntp-diff='ntpdate -q pool.ntp.org'
-alias ntp-set='sudo ntpdate -u pool.ntp.org'
+alias ntp-diff="ntpdate -q $NTP_SERVER"
+alias ntp-set="sudo ntpdate -u $NTP_SERVER"
 alias nv='nvim'
 alias o='node'
 alias oc='octopress'
