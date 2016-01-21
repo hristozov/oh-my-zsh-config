@@ -21,6 +21,7 @@ alias grbb='git rebase -i master'
 alias grs='git reset --soft HEAD~1'
 alias gsui='git submodule update --init'
 alias gt='git tag'
+alias gtd='git tag -d'
 
 gb-merged() {
   git branch -M $1 "merged/$1"
