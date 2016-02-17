@@ -9,6 +9,8 @@ alias gcom='git checkout origin/master'
 alias gdh='git diff head'
 alias gdm='git diff --stat master'
 alias gdmh='git diff --stat master HEAD'
+alias git-ignore-file='git update-index --assume-unchanged'
+alias git-list-ignored-files="git ls-files -v | grep '^[[:lower:]]'"
 alias git-prune-origin='git remote update origin --prune'
 alias git-prune-reflog='git reflog expire --expire=1.minute refs/heads/master && git fsck --unreachable && git prune && git gc'
 alias git-set-default-branch='git symbolic-ref HEAD refs/heads/'
