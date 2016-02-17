@@ -14,6 +14,7 @@ alias git-list-ignored-files="git ls-files -v | grep '^[[:lower:]]'"
 alias git-prune-origin='git remote update origin --prune'
 alias git-prune-reflog='git reflog expire --expire=1.minute refs/heads/master && git fsck --unreachable && git prune && git gc'
 alias git-set-default-branch='git symbolic-ref HEAD refs/heads/'
+alias git-unignore-file='git update-index --no-assume-unchanged'
 alias gmm='git merge master'
 alias gms='git merge --squash'
 alias gpo='git push origin'
