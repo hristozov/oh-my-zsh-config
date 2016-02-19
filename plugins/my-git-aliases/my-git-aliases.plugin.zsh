@@ -10,6 +10,7 @@ alias gdh='git diff head'
 alias gdm='git diff --stat master'
 alias gdmh='git diff --stat master HEAD'
 alias git-ignore-file='git update-index --assume-unchanged'
+alias git-list-biggest-objects="git rev-list --objects --all | grep \"\$(git verify-pack -v .git/objects/pack/*.idx | sort -k 3 -n | tail -10 | awk '{print\$1}')\""
 alias git-list-ignored-files="git ls-files -v | grep '^[[:lower:]]'"
 alias git-prune-origin='git remote update origin --prune'
 alias git-prune-reflog='git reflog expire --expire=1.minute refs/heads/master && git fsck --unreachable && git prune && git gc'
