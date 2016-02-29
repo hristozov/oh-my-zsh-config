@@ -1,6 +1,6 @@
 # Contains useful aliases, which I use regularly in my workflows.
 
-NTP_SERVER="pool.ntp.org"
+NTP_SERVER="bg.pool.ntp.org"
 
 alias a='atom'
 alias att='atom .'
