@@ -39,6 +39,7 @@ alias l='ls -l'
 alias la='ls -al'
 alias le='lein'
 alias lh='ls -alh'
+alias lint='rake lint || taunt'
 alias m='mvim'
 alias n='npm'
 alias ntp-diff="ntpdate -q $NTP_SERVER"
