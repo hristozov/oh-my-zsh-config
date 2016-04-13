@@ -16,11 +16,6 @@ then
   path+="/usr/local/sbin"
 fi
 
-if [ -e "/Applications/Racket v6.0.1" ]
-then
-  path+="/Applications/Racket v6.0.1/bin"
-fi
-
 if [ -e "$HOME/.cabal/bin" ]
 then
   path+="$HOME/.cabal/bin"
