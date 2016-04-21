@@ -34,6 +34,10 @@ gb-merged() {
   git branch -M $1 "merged/$1"
 }
 
+gdbr() {
+  git diff $1 HEAD
+}
+
 grbh() {
   git rebase -i HEAD~$1
 }
@@ -41,6 +45,7 @@ grbh() {
 # TODO: Move it to a completions file.
 compdef _git gcom=git-checkout
 compdef _git gdm=git-diff
+compdef _git gdbr=git-diff
 compdef _git gmm=git-merge
 compdef _git gms=git-merge
 compdef _git gb-merged=git-merge
