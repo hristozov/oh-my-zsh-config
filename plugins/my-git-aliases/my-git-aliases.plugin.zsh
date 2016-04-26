@@ -38,6 +38,10 @@ gdbr() {
   git diff $1 HEAD
 }
 
+gllg() {
+  git log --stat ^$1 HEAD
+}
+
 grbh() {
   git rebase -i HEAD~$1
 }
