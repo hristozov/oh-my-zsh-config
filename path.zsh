@@ -5,11 +5,6 @@ then
   path+="$HOME/bin"
 fi
 
-if [ -e "$HOME/idea" ]
-then
-  path+="$HOME/idea/bin"
-fi
-
 # Contains some binaries installed with homebrew.
 if [ -e "/usr/local/sbin" ]
 then
@@ -24,12 +19,6 @@ fi
 if [ -e "$HOME/.nimble/bin" ]
 then
   path+="$HOME/.nimble/bin"
-fi
-
-if [ -e "$HOME/condor" ]
-then
-  path+="$HOME/condor/bin"
-  path+="$HOME/condor/sbin"
 fi
 
 export PATH
