@@ -13,4 +13,7 @@ export HISTFILE=~/.histfile
 export HISTSIZE=200000
 export SAVEHIST=200000
 export ANSIBLE_INVENTORY=~/.ansible_hosts
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+
+if [ -f /usr/libexec/java_home ]; then
+  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+fi
