@@ -18,7 +18,7 @@ prompt_string() {
   local svn_prompt="$(svn_prompt)"
   local scm_prompt="%{$fg_bold[yellow]%}$svn_prompt"
   local prompt_character="%{$fg_bold[blue]%} %_$(prompt_char)%{$reset_color%}"
-  echo "$directory$scm_prompt$prompt_character "
+  echo "$hostname $directory$scm_prompt$prompt_character "
 }
 
 PROMPT='$(prompt_string)'
