@@ -10,8 +10,8 @@ else
 fi
 
 export HISTFILE=~/.histfile
-export HISTSIZE=200000
-export SAVEHIST=200000
+export HISTSIZE=1500000
+export SAVEHIST=1500000
 export ANSIBLE_INVENTORY=~/.ansible_hosts
 
 if [ -f /usr/libexec/java_home ]; then
