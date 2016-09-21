@@ -13,6 +13,7 @@ alias gdms='git diff --stat master'
 alias gds='git diff --staged'
 alias gdsst='git diff --staged --stat'
 alias gdst='git diff --stat'
+alias gfu='git fetch upstream'
 alias gh='git show'
 alias git-ignore-file='git update-index --assume-unchanged'
 alias git-list-biggest-objects="git rev-list --objects --all | grep \"\$(git verify-pack -v .git/objects/pack/*.idx | sort -k 3 -n | tail -10 | awk '{print\$1}')\""
