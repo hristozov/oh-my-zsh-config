@@ -29,8 +29,12 @@ unset k
 [[ -n "${key[Right]}"   ]]  && bindkey  "${key[Right]}"   forward-char
 
 # Mac-specific
-bindkey "^[^[[C"  forward-word
+bindkey '^[[1;9D' backward-word
+bindkey '^[[1;3D' backward-word
 bindkey "^[^[[D"  backward-word
+bindkey "^[^[[C"  forward-word
+bindkey '^[[1;9C' forward-word
+bindkey '^[[1;3C' forward-word
 bindkey "^[[D"    beggining-of-line
 bindkey "^[[C"    end-of-line
 
