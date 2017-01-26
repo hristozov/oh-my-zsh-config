@@ -2,8 +2,6 @@
 
 NTP_SERVER="bg.pool.ntp.org"
 
-alias a='atom'
-alias att='atom .'
 alias b='brew'
 alias ba='brew cask'
 alias be='bundle exec'
