@@ -16,9 +16,4 @@ then
   path+="$HOME/.cabal/bin"
 fi
 
-if [ -e "$HOME/.nimble/bin" ]
-then
-  path+="$HOME/.nimble/bin"
-fi
-
 export PATH
