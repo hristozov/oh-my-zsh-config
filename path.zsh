@@ -16,4 +16,6 @@ then
   path+="$HOME/.cabal/bin"
 fi
 
+PATH="$(yarn global bin):$PATH"
+
 export PATH
