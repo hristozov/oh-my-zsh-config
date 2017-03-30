@@ -16,6 +16,8 @@ then
   path+="$HOME/.cabal/bin"
 fi
 
-PATH="$(yarn global bin):$PATH"
+if hash yarn 2>/dev/null; then
+  path+="$(yarn global bin)"
+fi
 
 export PATH
