@@ -63,6 +63,7 @@ alias taunt='eval $TAUNT'
 alias v='vim'
 alias wgc='wget -c'
 alias wtf='which'
+alias y='yarn'
 
 curl-post-file() {
   curl -vv -X POST --data "@$2" $1
