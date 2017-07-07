@@ -4,21 +4,11 @@ function prompt_char {
   if [ $UID -eq 0 ]; then echo "Ψ"; else echo "→"; fi
 }
 
-svn_prompt() {
-  if $(in_svn); then
-    echo " ($(svn_prompt_info)@$(svn_get_rev_nr))"
-  else
-    echo ""
-  fi
-}
-
 prompt_string() {
   local hostname="%{$fg_bold[green]%}%m"
   local directory="%{$fg_bold[blue]%}%(!.%1~.%~)"
-  local svn_prompt="$(svn_prompt)"
-  local scm_prompt="%{$fg_bold[yellow]%}$svn_prompt"
   local prompt_character="%{$fg_bold[blue]%} %_$(prompt_char)%{$reset_color%}"
-  echo "$hostname $directory$scm_prompt$prompt_character "
+  echo "$hostname $directory$prompt_character "
 }
 
 PROMPT='$(prompt_string)'
