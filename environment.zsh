@@ -1,6 +1,5 @@
 # Various environment variables.
 
-export TAUNT="say fuck shit cock balls"
 export EDITOR=`which vim`
 
 if hash most 2>/dev/null; then
