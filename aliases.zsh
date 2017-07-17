@@ -26,6 +26,7 @@ alias find-files-with-trailing-whitespace='find . -type f -exec egrep -l " +$" {
 alias grep='grep --colour=auto'
 alias h='ls -hl'
 alias halt='sudo halt'
+alias i='tig'
 alias je='jekyll'
 alias l='ls -l'
 alias la='ls -al'
