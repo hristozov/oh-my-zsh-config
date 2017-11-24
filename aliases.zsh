@@ -93,3 +93,9 @@ remove-domain-from-known-hosts() {
 whiteboard-digitize() {
   convert $1 -morphology Convolve DoG:15,100,0 -negate -normalize -blur 0x1 -channel RBG -level 60%,91%,0.1 $2
 }
+
+# https://routley.io/tech/2017/11/23/logbook.html
+lb() {
+  st ~/logbook/$(date '+%Y-%m-%d').md
+}
+
