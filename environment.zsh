@@ -8,6 +8,9 @@ else
   export PAGER=`which less`
 fi
 
+# Do not use a pager for less than 1 page
+export LESS="$LESS -FRXK" 
+
 export HISTFILE=~/.histfile
 export HISTSIZE=1500000
 export SAVEHIST=1500000
