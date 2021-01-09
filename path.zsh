@@ -21,3 +21,5 @@ if hash yarn 2>/dev/null; then
 fi
 
 export PATH
+
+# vim: et sw=2 sts=2

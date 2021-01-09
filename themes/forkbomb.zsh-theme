@@ -17,3 +17,5 @@ ZSH_THEME_GIT_PROMPT_PREFIX=" ("
 ZSH_THEME_GIT_PROMPT_SUFFIX=")"
 ZSH_THEME_SVN_PROMPT_DIRTY="%{$fg_bold[red]%}(⚡)%{$fg_bold[yellow]%}"
 ZSH_THEME_SVN_PROMPT_CLEAN="%{$fg_bold[green]%}(○)%{$fg_bold[yellow]%}"
+
+# vim: et sw=2 sts=2 filetype=zsh

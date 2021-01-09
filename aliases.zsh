@@ -10,15 +10,15 @@ alias bu='bundle'
 alias compress-bz2='tar --use-compress-program=pbzip2 -cvf'
 alias compress-gz='tar -czvf'
 alias compress-xz='tar --use-compress-program=pigz -cvf'
-alias doc='docker'
-alias docb='docker build'
-alias docc='docker-compose'
+alias doc-remove-all-containers='docker rm $(docker ps --no-trunc -aq)'
+alias doc-remove-all-images='docker rmi $(docker images -q)'
+alias doc-remove-all-volumes='docker volume rm $(docker volume ls -q)'
 alias doc-remove-dangling-images='docker rmi $(docker images -q -f dangling=true)'
 alias doc-remove-stopped-containers='docker rm -v $(docker ps --filter status=dead --filter status=exited -aq)'
 alias doc-remove-unused-volumes='docker volume rm $(docker volume ls -qf dangling=true)'
-alias doc-remove-all-images='docker rmi $(docker images -q)'
-alias doc-remove-all-containers='docker rm $(docker ps --no-trunc -aq)'
-alias doc-remove-all-volumes='docker volume rm $(docker volume ls -q)'
+alias doc='docker'
+alias docb='docker build'
+alias docc='docker-compose'
 alias dominos='open http://dominos.bg/'
 alias ducksh='du -cksh'
 alias e='grep'
@@ -99,3 +99,4 @@ lb() {
   st ~/logbook/$(date '+%Y-%m-%d').md
 }
 
+# vim: et sw=2 sts=2

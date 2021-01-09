@@ -83,3 +83,5 @@ compdef _git gmm=git-merge
 compdef _git gms=git-merge
 compdef _git gb-merged=git-merge
 compdef _git gbdd=git-checkout
+
+# vim: et sw=2 sts=2

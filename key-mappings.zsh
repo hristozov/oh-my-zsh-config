@@ -41,3 +41,5 @@ bindkey "^[[C"    end-of-line
 # Unknown?!
 bindkey '\eOH' beginning-of-line
 bindkey '\eOF' end-of-line
+
+# vim: et sw=2 sts=2
