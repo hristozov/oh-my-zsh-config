@@ -1,18 +1,22 @@
 # oh-my-zsh config
 
-My [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) configuration. Most of it consists of awesome aliases, which speed up my terminal work and make my life hell on other systems.
+My [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) configuration. Most of
+it consists of awesome aliases, which speed up my terminal work and make my life
+hell on other systems. There's also a theme, which is inspired by the classic
+Gentoo shell prompt.
 
-Perhaps it's not very elegant, but works for me.
+Obviously, this is messy and very specific to my way of work.
 
 ## Usage
 
-(_the way I actually use it on my system(s), probably won't be very useful on yours_)
+(_the way I actually use it on my system(s), probably won't be very useful on
+yours_)
 
-This repository lives in the `~/.oh-my-zsh/custom` directory. The following in present in `~/.zshrc`:
+This repository lives in the `~/.oh-my-zsh/custom` directory. The following is
+present in `~/.zshrc`:
 
 ```bash
 ZSH_THEME="forkbomb"
-plugins=(my-git-aliases ansible aws brew docker git git-extras git-prompt grunt lein mvn npm node osx rails ruby rvm sublime svn vagrant)
+plugins=(<plugins needed> my-git-aliases)
 ```
 
-Note the custom `my-git-aliases` plugin in the list.
