@@ -63,6 +63,18 @@ grbh() {
   git rebase -i HEAD~$1
 }
 
+git-rebase-changeset() {
+  cln=$(git changeset show | head -n1 | awk '{print $2}')
+  echo "Rebasing $cln"
+  git rebase $@ origin/master
+  git changeset update --since origin/master $cln
+}
+
+gbdd() {
+  git branch -D $1
+  git push origin :$1
+}
+
 # TODO: Move it to a completions file.
 compdef _git gcom=git-checkout
 compdef _git gdm=git-diff
@@ -70,3 +82,4 @@ compdef _git gdbr=git-diff
 compdef _git gmm=git-merge
 compdef _git gms=git-merge
 compdef _git gb-merged=git-merge
+compdef _git gbdd=git-checkout
