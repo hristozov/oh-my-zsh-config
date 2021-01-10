@@ -28,18 +28,4 @@ unset k
 [[ -n "${key[Left]}"    ]]  && bindkey  "${key[Left]}"    backward-char
 [[ -n "${key[Right]}"   ]]  && bindkey  "${key[Right]}"   forward-char
 
-# Mac-specific
-bindkey '^[[1;9D' backward-word
-bindkey '^[[1;3D' backward-word
-bindkey "^[^[[D"  backward-word
-bindkey "^[^[[C"  forward-word
-bindkey '^[[1;9C' forward-word
-bindkey '^[[1;3C' forward-word
-bindkey "^[[D"    beggining-of-line
-bindkey "^[[C"    end-of-line
-
-# Unknown?!
-bindkey '\eOH' beginning-of-line
-bindkey '\eOF' end-of-line
-
 # vim: et sw=2 sts=2
