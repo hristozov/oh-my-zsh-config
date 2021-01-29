@@ -75,6 +75,42 @@ gbdd() {
   git push origin :$1
 }
 
+git-fix-copyrights() {
+  base=$(git merge-base HEAD origin/master)
+  current_year=$(date +%Y)
+  last_year=$(($current_year - 1))
+
+  for f in $(git diff --name-only $base); do
+    if [ $(head -n2 $f | grep -c $current_year) != "0" ]; then
+        echo "Skipping $f, it's already stamped"
+        continue
+    fi
+    echo "Processing $f"
+
+    # Replace \ last_year with \ last_year-current_year
+    gsed -i "1,2s/[[:space:]]$last_year/&-$current_year/g" $f
+    git diff --exit-code $f || continue
+
+    # Replace -last_year with -current_year
+    gsed -i "1,2s/-$last_year/-$current_year/g" $f
+    git diff --exit-code $f || continue
+
+    # Replace ,last_year with ,last-year-current_year
+    gsed -i "1,2s/,$last_year/&-$current_year/g" $f
+    git diff --exit-code $f || continue
+
+    # Replace some_year-other-year with some_year-other_year,current_year
+    gsed -i "1,2s/[[:digit:]]\{4\}-[[:digit:]]\{4\}/&,$current_year/g" $f
+    git diff --exit-code $f || continue
+
+    # Replace some_year with some_year,current_year
+    gsed -i "1,2s/[[:space:]][[:digit:]]\{4\}/&,$current_year/g" $f
+    git diff --exit-code $f || continue
+
+    echo "WARNING: File $f still doesn't match anything!"
+  done
+}
+
 # TODO: Move it to a completions file.
 compdef _git gcom=git-checkout
 compdef _git gdm=git-diff
