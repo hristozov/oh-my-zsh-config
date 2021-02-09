@@ -27,6 +27,7 @@ alias git-prune-reflog='git reflog expire --expire=1.minute refs/heads/master &&
 alias git-set-default-branch='git symbolic-ref HEAD refs/heads/'
 alias git-unignore-file='git update-index --no-assume-unchanged'
 alias glmb='git log $(git merge-base HEAD origin/master)..'
+alias glom='git pull origin master'
 alias gmb='git merge-base HEAD'
 alias gmbo='git merge-base HEAD origin/master'
 alias gmm='git merge master'
