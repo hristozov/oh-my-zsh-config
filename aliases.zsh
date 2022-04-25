@@ -1,5 +1,6 @@
 # Contains useful aliases, which I use regularly in my workflows.
 
+alias b='brew'
 alias be='bundle exec'
 alias bu='bundle'
 alias compress-bz2='tar --use-compress-program=pbzip2 -cvf'
