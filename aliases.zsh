@@ -31,6 +31,7 @@ alias tn='tmux new -s'
 alias tnc='tmux -CC new -s'
 alias v='vim'
 alias wgc='wget -c'
+alias y='yarn'
 
 get-random-word() {
   perl -e 'srand; rand($.) < 1 && ($line = $_) while <>; print $line;' /usr/share/dict/words
