@@ -114,6 +114,10 @@ git-fix-copyrights() {
   done
 }
 
+gto() {
+    git checkout -b topic/$USER/$1
+}
+
 # TODO: Move it to a completions file.
 compdef _git gcom=git-checkout
 compdef _git gdm=git-diff
