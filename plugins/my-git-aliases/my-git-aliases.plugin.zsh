@@ -115,7 +115,7 @@ git-fix-copyrights() {
 }
 
 gto() {
-    git checkout -b topic/$USER/$1
+  git checkout -b topic/$USER/$1
 }
 
 # TODO: Move it to a completions file.
