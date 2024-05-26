@@ -16,8 +16,4 @@ export HISTFILE=~/.histfile
 export HISTSIZE=1500000
 export SAVEHIST=1500000
 
-if [ -f /usr/libexec/java_home ]; then
-  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-fi
-
 # vim: et sw=2 sts=2
