@@ -1,6 +1,6 @@
 # Various environment variables.
 
-export LANG="en_US"
+export LANG="en_US.UTF-8"
 export EDITOR=`which vim`
 
 if hash most 2>/dev/null; then
