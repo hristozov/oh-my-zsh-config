@@ -118,6 +118,12 @@ gto() {
   git checkout -b topic/$USER/$1
 }
 
+git_main_branch () {
+  # Allow override with GIT_MAIN_BRANCH for projects that don't use the main/master convention.
+  branch=${GIT_MAIN_BRANCH:-master}
+  echo $branch
+}
+
 # TODO: Move it to a completions file.
 compdef _git gcom=git-checkout
 compdef _git gdm=git-diff
