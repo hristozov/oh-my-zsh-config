@@ -1,6 +1,7 @@
 # My git aliases.
 
 alias g='git'
+alias gab='git absorb'
 alias gap='git add -p'
 alias gb-remove-merged='git branch --list | egrep "\s{2}merged" | xargs git branch -D'
 alias gbd='git branch -D'
