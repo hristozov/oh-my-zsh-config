@@ -13,7 +13,7 @@ fi
 export LESS="$LESS -FRXK" 
 
 export HISTFILE=~/.histfile
-export HISTSIZE=1500000
-export SAVEHIST=1500000
+export HISTSIZE=50000
+export SAVEHIST=50000
 
 # vim: et sw=2 sts=2
